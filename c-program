@@ -79,12 +79,12 @@ int main()
 	char a[50];
  	char b[50];
  	char c[50];
-    printf("enter a word:\n");
-    scanf("%s\n",a);
-	printf("enter a word:\n");
-    scanf("%s\n",b);
-	printf("enter a word:\n");
-	scanf("%s\n",c);
+        printf("enter a word:");
+        scanf("%s",a);
+	printf("enter a word:");
+        scanf("%s",b);
+	printf("enter a word:");
+	scanf("%s",c);
 	return 0;
 }
 .............................................
@@ -101,7 +101,7 @@ int main()
 {
     char str[100], copystr[100];
     int i=0;
-    printf("enter");
+    printf("enter:");
     scanf("%s",str);
     while(str[i]!='\0')
     {
@@ -109,8 +109,8 @@ int main()
         i++;
     }
    copystr[i]='\0';
-   printf("copy word%s",copystr);
-    return 0;
+   printf("copy word:%s",copystr);
+   return 0;
 }
 ..............................................
 
