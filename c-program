@@ -189,3 +189,111 @@ int main()
   return 0;
 }
 .........................................
+
+
+Print Elements in an Array using For Loop 
+
+#include <stdio.h>
+ 
+int main()
+{
+  int Array[50], i, Number;
+ 
+  printf("\nPlease Enter Number of elements in an array  :  ");
+  scanf("%d", &Number);
+ 
+  printf("\nPlease Enter %d elements of an Array \n", Number);
+  for (i = 0; i < Number; i++)
+   {
+     scanf("%d", &Array[i]);
+   }     
+ 
+  printf("\n Elemenst in this Array are :\n");
+  for (i = 0; i < Number; i++)
+  {
+ 	printf("%d\t", Array[i]);
+  }     
+ 
+  return 0;
+}
+....................................................
+
+SUM AND AVE 
+
+#include <stdio.h>
+int main ()
+{
+  int a[25], n, i,avg = 0, sum = 0;
+  printf (" Enter the Numbers of element in Array: ");
+  scanf ("%d ", &n);
+  printf ("\n Enter the Array of Element : \n");
+  for (i = 1; i<=n; i++)
+    {
+      scanf ("%d ", &a[i]);
+    }
+  for (i = 1; i<=n; i++)
+    {
+      sum = sum + a[i];
+      avg = sum / n;
+    }
+  printf ("\n Sum of Element of Array is : %d ", sum);
+  printf ("\n Average of Element of Array are : %d ", avg);
+  return (0);
+}
+..............................................................
+
+COPY ARRAY 
+
+#include<stdio.h>
+ 
+int main() {
+   int arr1[30], arr2[30], i, num;
+ 
+   printf("\nEnter no of elements :");
+   scanf("%d", &num);
+ 
+   //Accepting values into Array
+   printf("\nEnter the values :");
+   for (i = 0; i < num; i++) {
+      scanf("%d", &arr1[i]);
+   }
+ 
+   /* Copying data from array 'a' to array 'b */
+   for (i = 0; i < num; i++) {
+      arr2[i] = arr1[i];
+   }
+ 
+   //Printing of all elements of array
+   printf("The copied array is :");
+   for (i = 0; i < num; i++)
+      printf("\narr2[%d] = %d", i, arr2[i]);
+ 
+   return (0);
+}
+
+..................................................
+
+
+REVERSE THE ARRAY
+
+#include <stdio.h>
+int main(){
+   int num, i, j, array1[50], array2[50];
+   printf("Enter no of elements in array\n");
+   scanf("%d", &num);
+   printf("Enter array elements\n");
+   for (i = 0; i < num ; i++)
+      scanf("%d", &array1[i]);
+   // Copying elements into array
+   for (i = num - 1, j = 0; i >= 0; i--,j++)
+      array2[j] = array1[i];
+   // Copying reversed array into the original
+   for (i = 0; i < num; i++)
+      array1[i] = array2[i];
+   printf("The reversed array:\n");
+   for (i = 0; i< num; i++)
+      printf("%d\n", array1[i]);
+   return 0;
+}
+
+.......................................................
