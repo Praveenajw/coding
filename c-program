@@ -297,3 +297,60 @@ int main(){
 }
 
 .......................................................
+MATIX ARRAY
+
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int
+main ()
+{
+  int a[2][3], b[2][3], c[2][3], i, j;
+  printf ("enter the 1st matix");
+  printf ("\n\nenter the element");
+  for (i = 0; i < 2; i++)
+    {
+      for (j = 0; j < 3; j++)
+	{
+	  scanf ("%d", &a[i][j]);
+	}
+    }
+  printf ("enter the 2rd matix");
+  printf ("\n\nenter the element");
+  for (i = 0; i < 2; i++)
+    {
+      for (j = 0; j < 3; j++)
+	{
+	  scanf ("%d", &b[i][j]);
+	}
+    }
+
+  for (i = 0; i < 2; i++)
+    {
+      for (j = 0; j < 3; j++)
+	{
+	  c[i][j] = a[i][j] + b[i][j];
+	}
+    }
+
+
+  for (i = 0; i < 2; i++)
+    {
+      for (j = 0; j < 3; j++)
+	{
+	  printf ("%d ", c[i][j]);
+	}
+      printf ("\n");
+
+    }
+  return 0;
+}
+
+
