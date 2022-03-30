@@ -348,4 +348,23 @@ main ()
 }
 
 *******************************************************************************/
+PRINT CHAR MATIX ARRAY
+
+#include <stdio.h>
+
+  int main ()
+  {
+    char arr[3][4] = { "rath", "inam", "tech" };
+    int i, j;
+    for (i = 0; i < 3; i++)
+      {
+	for (j = 0; j < 4; j++)
+	  {
+	    if (arr[i][j] == 'n')
+		    printf ("%d %d", i, j);
+	      
+	  }
+      }
+    return 0;
+  }
 
