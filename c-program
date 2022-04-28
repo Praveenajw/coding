@@ -367,4 +367,45 @@ PRINT CHAR MATIX ARRAY
       }
     return 0;
   }
+  
+ ***************************************************************************
+  
+ASCII value in C
+
+which will display the ascii value of the character variable.
+  
+#include <stdio.h>  
+int main()  
+{  
+    char ch;
+    printf("Enter a character%c",10);  
+    scanf("%c",&ch);   
+    printf("\n The ascii value  is %c= %d", ch,ch);  
+    return 0;  
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
